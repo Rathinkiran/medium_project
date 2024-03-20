@@ -27,14 +27,14 @@ export const blogRouter=new Hono<{
     else{
         c.status(403);
         return c.json({
-            message:"You are not loggen in"
+            message:"You are not logged in"
         })
     }
 
     }catch(e){
         c.status(403);
         return c.json({
-            message:"You are not loggen in"
+            message:"You are not logged in"
         })
     }
     
