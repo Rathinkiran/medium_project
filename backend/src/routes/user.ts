@@ -22,7 +22,6 @@ userRouter.post('/signup', async (c) => {
             message:"Inputs not correct"
         })
     }
-    console.log("hii")
     const prisma = new PrismaClient({
       datasourceUrl: c.env.DATABASE_URL,
   }).$extends(withAccelerate())
@@ -34,7 +33,6 @@ userRouter.post('/signup', async (c) => {
         password:body.password,
         name:body.name
       }
-  
      })
      const jwt=await sign({
       id:user.id
@@ -44,8 +42,8 @@ userRouter.post('/signup', async (c) => {
   
   }catch(e){
     c.status(411);
-    return c.text('Invalid')
     console.log(e)
+    return c.text('Invalid')
   }
   })
   
