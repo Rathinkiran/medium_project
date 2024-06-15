@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
 import {decode,sign,verify} from "hono/jwt"
-import { SignupInput, signinInput, signupInput } from '@rathinkiran/medium-common2'
+import { signinInput, signupInput } from '@rathinkiran/medium-common2'
 
 
 

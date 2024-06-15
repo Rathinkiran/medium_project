@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.11.0",
-    "@prisma/extension-accelerate": "^1.0.0",
+    "@prisma/extension-accelerate": "^1.1.0",
     "@rathinkiran/medium-common": "^1.0.0",
     "@rathinkiran/medium-common2": "^1.0.0",
     "hono": "^4.1.2",

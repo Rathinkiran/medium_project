@@ -1,6 +1,13 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  // or "binary"
 }
+
+//generator client {
+//  provider      = "prisma-client-js"
+  //engineType    = "library" // or "binary"
+//}
+
 
 datasource db {
   provider = "postgresql"
@@ -14,7 +21,6 @@ model User {
   username String @unique
   password String
   blogs Blog[]
-  
 }
 
 model Blog {
